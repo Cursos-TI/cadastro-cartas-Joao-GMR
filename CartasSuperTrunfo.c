@@ -37,7 +37,7 @@ int main() {
     scanf (" %s", &codigo1);
     
     printf ("Nome da cidade: ");
-    scanf (" %s", &nomeCidade1);
+    scanf (" %[^\n]", &nomeCidade1);
     
     printf ("População: ");
     scanf (" %d", &populacao1);
@@ -62,7 +62,7 @@ int main() {
     scanf (" %s", &codigo2);
     
     printf ("Nome da cidade: ");
-    scanf (" %s", &nomeCidade2);
+    scanf (" %[^\n]", &nomeCidade2);
     
     printf ("População: ");
     scanf (" %d", &populacao2);
@@ -76,10 +76,26 @@ int main() {
     printf ("Número de pontos turisticos: ");
     scanf (" %d", &pontosTuristicos2);
   // Área para exibição dos dados da cidade
-
+    printf ("\n \n");
+    printf ("Informações da Carta 1");
     printf ("Carta 1: \n");
     printf ("Estado: %c\n", estado1);
     printf ("Código: %s\n", codigo1);
+    printf ("Nome da Cidade: %s\n", nomeCidade1);
+    printf ("População: %d\n", populacao1);
+    printf ("Área: %.f\n", area1);
+    printf ("PIB: %.f\n", pib1);
+
+    printf ("\n \n");
+    printf ("Informações da Carta 2");
+    printf ("Carta 2: \n");
+    printf ("Estado: %c\n", estado2);
+    printf ("Código: %s\n", codigo2);
+    printf ("Nome da Cidade: %s\n", nomeCidade2);
+    printf ("População: %d\n", populacao2);
+    printf ("Área: %.f\n", area2);
+    printf ("PIB: %.f\n", pib2);
+
 return 0;
 } 
 
